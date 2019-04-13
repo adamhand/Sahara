@@ -6,8 +6,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TestController {
-    @RequestMapping(value="/index", produces = {"application/json;charset=UTF-8"})
+    @RequestMapping(value = "/index", produces = {"application/json;charset=UTF-8"})
     public String index(){
-        return "post";
+        return "site/index";
+    }
+
+    @RequestMapping(value = "/about", produces = {"application/json;charset=UTF-8"})
+    public String about(){
+        return "site/about";
+    }
+
+    @RequestMapping(value = "/contact", produces = {"application/json;charset=UTF-8"})
+    public String contact(){
+        return "site/contact";
+    }
+
+    @RequestMapping(value = "/post", produces = {"application/json;charset=UTF-8"})
+    public String post(){
+        return "site/post";
     }
 }
