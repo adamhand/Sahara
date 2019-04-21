@@ -3,8 +3,7 @@ package com.sahara.pojo;
 import lombok.Data;
 
 @Data
-public class User {
+public class Tag {
     private int id;
-    private String name;
-    private String password;
+    private String tagName;
 }
